@@ -43,11 +43,7 @@
 #include <mach/sec_debug.h>
 #endif
 
-#ifdef CONFIG_LOW_CPUCLOCKS
-#define FREQ_TABLE_SIZE		39
-#else
-#define FREQ_TABLE_SIZE		35
-#endif
+#include "krait-defines.h"
 
 /* MUX source selects. */
 #define PRI_SRC_SEL_SEC_SRC	0
